@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import HomePage from './Pages/Home/HomePage'
 import GroupPageA from './Pages/Groups/GroupAPage'
 import GroupPageB from './Pages/Groups/GroupBPage'
