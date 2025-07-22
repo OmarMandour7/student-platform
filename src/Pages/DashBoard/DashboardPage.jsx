@@ -28,10 +28,10 @@ const usersSheet = Array.from(
 
 
     fetchData();
-  }, []);
+  }, [users]);
   return (
-    <div className="container py-5">
-      <h1 className="mb-4 text-center">📊 لوحة تحكم الإدارة</h1>
+    <div className="container p-5 ">
+      <h1 className=" text-center">📊 لوحة تحكم الإدارة</h1>
 
       {/* تسجيل الدخول */}
       <div className="mb-5">

@@ -7,8 +7,11 @@ import GroupPageD from './Pages/Groups/GroupDPage'
 import Navbar from './Components/Utility/NavBar'
 import LessonPage from './Pages/Lessons/LessonsPage'
 import Dashboard from './Pages/DashBoard/DashboardPage'
+import BlockedPage from './Pages/DashBoard/Allowed'
 
 function App() {
+      const savedName = localStorage.getItem('studentName');
+
   return (
     <div>
       <Navbar/>
@@ -20,7 +23,10 @@ function App() {
           <Route path="/groupc" element={<GroupPageC/>} />
            <Route path="/groupd" element={<GroupPageD/>} />
             <Route path="/group/:groupId/lesson/:lessonId" element={<LessonPage />} />
-             <Route path="/admindashboard" element={<Dashboard/>} />
+            {
+                savedName === "aya" ? (<Route path="/admindashboard" element={<Dashboard/>} />):<Route path="/admindashboard" element={<BlockedPage/>} />
+            }
+             
                             </Routes>
     </div>
    
