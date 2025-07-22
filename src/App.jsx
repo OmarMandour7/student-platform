@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import HomePage from './Pages/Home/HomePage'
 import GroupPageA from './Pages/Groups/GroupAPage'
 import GroupPageB from './Pages/Groups/GroupBPage'
@@ -10,8 +10,6 @@ import Dashboard from './Pages/DashBoard/DashboardPage'
 import BlockedPage from './Pages/DashBoard/Allowed'
 
 function App() {
-      const savedName = localStorage.getItem('studentName');
-
   return (
     <div>
       <Navbar/>
@@ -23,12 +21,9 @@ function App() {
           <Route path="/groupc" element={<GroupPageC/>} />
            <Route path="/groupd" element={<GroupPageD/>} />
             <Route path="/group/:groupId/lesson/:lessonId" element={<LessonPage />} />
-          <Route path="/admindashboard" element={
-  savedName === "aya" ? <Dashboard /> : <Navigate to="/blocked" />
-} />
-<Route path="/blocked" element={<BlockedPage />} />
+             <Route path="/admindashboard" element={<Dashboard/>} />
+             <Route path="/blocked" element={<BlockedPage />} />
 
-             
                             </Routes>
     </div>
    

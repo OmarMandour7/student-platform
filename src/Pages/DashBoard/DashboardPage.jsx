@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Navigate } from "react-router-dom";
 
 function AdminDashboard() {
+
   const [users, setUsers] = useState([]);
   const [comments, setComments] = useState([]);
 
@@ -29,6 +31,10 @@ const usersSheet = Array.from(
 
     fetchData();
   }, [users]);
+    const savedName = localStorage.getItem("name");
+  if (savedName !== "aya") {
+    return <Navigate to="/blocked" />;
+  }
   return (
     <div className="container p-5 ">
       <h1 className=" text-center">📊 لوحة تحكم الإدارة</h1>
