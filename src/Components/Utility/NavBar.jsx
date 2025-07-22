@@ -39,10 +39,6 @@ export default function Navbar() {
   const handleLogout = () =>{
     localStorage.removeItem("studentName")
       localStorage.removeItem("studentgroup")
-       localStorage.removeItem("watchedLessonsa")
-        localStorage.removeItem("watchedLessonsb")
-         localStorage.removeItem("watchedLessonsc")
-          localStorage.removeItem("watchedLessonsd")
     window.location.href = "/";
   }
  
