@@ -1,0 +1,121 @@
+.mich{
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.lesson-card{
+    border: 2px rgba(0, 0, 0, 0.226) solid;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding: 30px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+body{
+  background-color: #F8F9FA;
+  font-family: 'Cairo', sans-serif;
+  color: #343A40;
+  
+}
+
+
+.cairo{
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+
+}
+
+.btn-primary {
+  background-color: #2C3E50;
+  border-radius: 10px 30px 20px 30px;
+  border: none;
+  -webkit-border-radius: 10px 30px 20px 30px;
+  -moz-border-radius: 10px 30px 20px 30px;
+  -ms-border-radius: 10px 30px 20px 30px;
+  -o-border-radius: 10px 30px 20px 30px;
+}
+
+.btn-primary:hover {
+  background-color: #1A252F;
+}
+.mar{
+  margin-right:20px  !important;
+}
+.group-button {
+  background-color: white;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  padding: 15px 25px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.group-button {
+  border: 2px solid var(--group-color);
+  color: var(--group-color);
+  background-color: white;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.group-button:hover {
+  background-color: var(--group-color);
+  color: white;
+}
+.news-ticker {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  font-family: Arial, sans-serif;
+  z-index: 9999; /* علشان يفضل ظاهر فوق أي عناصر تانية */
+}
+
+
+.ticker-content {
+  display: inline-block;
+  animation: scroll 2000s linear infinite;
+  -webkit-animation: scroll 2000s linear infinite;
+}
+
+.ticker-item {
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 18px;
+  border-right: 1px solid #ccc;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+  100% {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+}
