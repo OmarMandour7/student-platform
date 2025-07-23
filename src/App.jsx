@@ -21,8 +21,8 @@ function App() {
           <Route path="/groupc" element={<GroupPageC/>} />
            <Route path="/groupd" element={<GroupPageD/>} />
             <Route path="/group/:groupId/lesson/:lessonId" element={<LessonPage />} />
-             <Route path="/admindashboard" element={<Dashboard/>} />
-             <Route path="/blocked" element={<BlockedPage />} />
+            <Route path="/admindashboard" element={<Dashboard />} />
+        <Route path="/blocked" element={<BlockedPage />} />
 
                             </Routes>
     </div>

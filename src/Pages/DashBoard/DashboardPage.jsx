@@ -31,7 +31,8 @@ const usersSheet = Array.from(
 
     fetchData();
   }, [users]);
-    const savedName = localStorage.getItem("name");
+  
+    const savedName = localStorage.getItem("studentName");
   if (savedName !== "aya") {
     return <Navigate to="/blocked" />;
   }
