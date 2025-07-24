@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, ScrollRestoration } from 'react-router-dom'
 import HomePage from './Pages/Home/HomePage'
 import GroupPageA from './Pages/Groups/GroupAPage'
 import GroupPageB from './Pages/Groups/GroupBPage'
@@ -13,6 +13,7 @@ function App() {
   return (
     <div>
       <Navbar/>
+      <ScrollRestoration/>
  <Routes>
       
       <Route path="/" element={<HomePage />} />
