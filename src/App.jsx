@@ -1,4 +1,4 @@
-import { Routes, Route, ScrollRestoration } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import HomePage from './Pages/Home/HomePage'
 import GroupPageA from './Pages/Groups/GroupAPage'
 import GroupPageB from './Pages/Groups/GroupBPage'
@@ -8,12 +8,13 @@ import Navbar from './Components/Utility/NavBar'
 import LessonPage from './Pages/Lessons/LessonsPage'
 import Dashboard from './Pages/DashBoard/DashboardPage'
 import BlockedPage from './Pages/DashBoard/Allowed'
+import ScrollToTop from './Components/Utility/Scroll'
 
 function App() {
   return (
     <div>
       <Navbar/>
-      <ScrollRestoration/>
+      <ScrollToTop/>
  <Routes>
       
       <Route path="/" element={<HomePage />} />
@@ -26,6 +27,8 @@ function App() {
         <Route path="/blocked" element={<BlockedPage />} />
 
                             </Routes>
+                                  
+
     </div>
    
   )
