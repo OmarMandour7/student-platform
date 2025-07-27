@@ -1,11 +1,11 @@
 const GoogleDrivePdfViewer = ({pdfId}) => {
 
   return (
-    <div className="container my-4">
+    <div className="container my-4 text-center">
       <iframe
         src={`https://drive.google.com/file/d/${pdfId}/preview`}
-        width="100%"
-        height="600"
+        width="50%"
+        height="700"
         allow="autoplay"
         title="PDF from Google Drive"
       ></iframe>
