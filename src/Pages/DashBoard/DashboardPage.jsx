@@ -1,10 +1,11 @@
-// AdminDashboard.js – Bootstrap version with polished UI
+// AdminDashboard.js – Bootstrap version with loader added
 import React, { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 
 function AdminDashboard() {
   const [users, setUsers] = useState([]);
   const [comments, setComments] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,6 +24,8 @@ function AdminDashboard() {
         setComments(commentsSheet);
       } catch (err) {
         console.error("Error fetching data", err);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -30,12 +33,22 @@ function AdminDashboard() {
   }, []);
 
   const savedName = localStorage.getItem("studentName");
-  if (savedName !== "aya") {
+  if (savedName !== "admin") {
     return <Navigate to="/blocked" />;
   }
 
+  if (loading) {
+    return (
+      <div className="d-flex justify-content-center align-items-center vh-100">
+        <div className="spinner-border text-primary" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="container py-1">
+    <div className="container py-5">
       <div className="card shadow-lg border-0 mb-5">
         <div className="card-body text-center bg-primary text-white">
           <h1 className="card-title mb-0">📊 Admin Dashboard</h1>

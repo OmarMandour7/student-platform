@@ -54,7 +54,7 @@ export default function Navbar() {
     {storedName ? (
       <div>
         <span className="fw-bold fs-4 text-primary">{storedName}  <i class="fa-solid fa-right-from-bracket text-danger mx-5 "  style={{cursor:"pointer"}} onClick={handleLogout}></i> </span>
-        {storedName.toLowerCase() === 'aya' && (
+        {storedName.toLowerCase() === 'admin' && (
           <Link to="/admindashboard" className="ms-3">
             <i className="fa-regular fa-user fs-5"></i>
           </Link>
