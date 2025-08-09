@@ -65,9 +65,8 @@ useEffect(() => {
       const filtered = data.filter((c) =>
         c.group === groupId.toUpperCase() &&
         c.lesson.toString() === lessonId.toString()
-      );
-        console.log(filtered)
-                console.log(data)
+      );  
+              
 
     setComments(filtered.map((c) => ({
   name: c.name,
@@ -86,19 +85,18 @@ useEffect(() => {
 
   const group = groupsData.find(g => g.id === groupId.toLowerCase());
   const lesson = group?.lessons.find(l => l.id === lessonId);
-
   if (!group || !lesson) {
     return <h2 className="text-danger text-center my-5">Lesson Not Found</h2>;
   }
 
   return (
     <div className="container my-5">
-      <h1 className="text-primary text-center cairo">{lesson.title}</h1>
-
-      <div className="my-5">
+      <h1 className="text-secondary text-center cairo">{lesson.title}</h1>
+      {
+        lesson.type === "video" ?  <div className="my-5">
         <h4>Videos</h4>
         {lesson.videos.map((videoUrl, index) => (
-          <div key={index} className="mb-3">
+          <div key={index} className="mb-3 rounded-5 p-4 " style={{backgroundColor : "#343A40"}}> 
             <iframe
               width="100%"
               height="500px"
@@ -108,21 +106,24 @@ useEffect(() => {
             ></iframe>
           </div>
         ))}
-      </div>
-
-      <div className="my-5">
-        <h4>PDF</h4>
-        <a href={lesson.pdf} target="_blank" rel="noopener noreferrer">
-          <GoogleDrivePdfViewer pdfId={lesson.pdfId} />
-        </a>
-      </div>
-
-      <div className="my-5">
+        {lesson.activityLink === " " ? (<div></div>) :  <div className="my-5">
         <h4>Activity</h4>
         <a href={lesson.activityLink} target="_blank" rel="noopener noreferrer">
           <button className="btn btn-primary">Visit Activity</button>
         </a>
       </div>
+      }
+      </div> :<div></div>
+      }
+       {
+        lesson.type === "pdf" ?  <div className="my-5">
+        <h4>PDF</h4>
+      
+          <GoogleDrivePdfViewer pdfId={lesson.pdfId} />
+        
+      </div> :<div></div>
+      }
+     
 
       <div className="my-4 text-center justify-content-center">
         <h1 className="text-success text-center cairo my-5">Finished Lesson?</h1>

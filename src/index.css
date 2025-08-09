@@ -4,7 +4,7 @@
   font-style: normal;
 }
 .lesson-card{
-    border: 2px rgba(0, 0, 0, 0.226) solid;
+    border: 2px rgba(212, 16, 16, 0.23) solid;
     border-radius: 50px;
     padding-left: 30px;
     padding: 30px;
@@ -26,7 +26,7 @@ body{
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-
+  
 }
 
 .btn-primary {
@@ -41,7 +41,9 @@ body{
 
 .btn-primary:hover {
   background-color: #1A252F;
+  
 }
+
 .mar{
   margin-right:20px  !important;
 }
@@ -88,7 +90,9 @@ body{
   z-index: 9999; /* علشان يفضل ظاهر فوق أي عناصر تانية */
 }
 
-
+.hov :hover{
+  scale: 1.05 ;
+}
 .ticker-content {
   display: inline-block;
   animation: scroll 2000s linear infinite;

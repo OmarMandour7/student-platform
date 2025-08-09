@@ -6,6 +6,9 @@ import groupsData from '../../Data/groupsData';
 const GroupPageA = () => {
   // نجيب بيانات Group A بس
   const groupA = groupsData.find(group => group.id === "a");
+const videoLessons = groupA.lessons.filter(lesson => lesson.type === "video");
+const pdfLessons = groupA.lessons.filter(lesson => lesson.type === "pdf");
+
 const handleLessonClick = (lessonId) => {
   const watched = JSON.parse(localStorage.getItem('watchedLessonsa')) || [];
   if (!watched.includes(lessonId) && localStorage.getItem("studentName")) {
@@ -13,21 +16,35 @@ const handleLessonClick = (lessonId) => {
     localStorage.setItem('watchedLessonsa', JSON.stringify(watched));
   }
 };
-const watchedLessonsa = JSON.parse(localStorage.getItem('watchedLessonsa')) || [];
 
   return (
     <div className='container mich' >
-      <div className='row' >
+      <div className='row g-3 ' >
         <h1 className='d-flex justify-content-center text-primary my-5'>
           Group A
         </h1>
       </div>
 
-      <div className='row' >
-        {groupA.lessons.map((lesson, index) => (
-          <div key={index} className='col-12 fs-3 mb-4' >
-           <Link to={`/group/${groupA.id}/lesson/${lesson.id}`} style={{ textDecoration: "none" , fontFamily:"monospace" }} onClick={() => handleLessonClick(lesson.id)}>
-              <Lesson1Card title={lesson.title}   watched={watchedLessonsa.includes(lesson.id)} shadowColor={groupA.color} />
+      <div className='row d-flex justify-content-evenly ' >
+        <h1 className='mb-5'>
+          Document Lessons 
+        </h1>
+        {pdfLessons.map((lesson, index) => (
+          <div key={index} className='col-6 col-md-3 col-lg-3 col-lg-3  fs-3 mb-4 px-5' >
+        <Link to={`/group/${groupA.id}/lesson/${lesson.id}`} className='hov ' style={{ textDecoration: "none" , fontFamily:"monospace" }} onClick={() => handleLessonClick(lesson.id)}>
+              <Lesson1Card title={lesson.title}   type={lesson.type} />
+            </Link>
+          </div>
+        ))}
+      </div>
+        <div className='row d-flex justify-content-evenly' >
+             <h1 className='mb-5'>
+          Videos  
+        </h1>
+        {videoLessons.map((lesson, index) => (
+          <div key={index} className='col-6 col-md-3 col-lg-3   mb-4  px-5' >
+        <Link to={`/group/${groupA.id}/lesson/${lesson.id}`} className='hov '  style={{ textDecoration: "none" , fontFamily:"monospace" }} onClick={() => handleLessonClick(lesson.id)}>
+              <Lesson1Card title={lesson.title}   type={lesson.type} />
             </Link>
           </div>
         ))}
