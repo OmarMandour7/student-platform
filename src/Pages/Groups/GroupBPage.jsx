@@ -18,7 +18,7 @@ const handleLessonClick = (lessonId) => {
 };
   return (
       <div className='container mich' >
-      <div className='row g-3 ' >
+      <div className='row g-6 ' >
         <h1 className='d-flex justify-content-center text-primary my-5'>
           Group B
         </h1>
@@ -29,7 +29,7 @@ const handleLessonClick = (lessonId) => {
           Document Lessons 
         </h1>
         {pdfLessons.map((lesson, index) => (
-          <div key={index} className='col-6 col-md-3 col-lg-3 col-lg-3  fs-3 mb-4 px-5' >
+          <div key={index} className='col-6 col-md-3 col-lg-3 col-lg-3   mb-4 px-1' >
         <Link to={`/group/${groupB.id}/lesson/${lesson.id}`} className='hov ' style={{ textDecoration: "none" , fontFamily:"monospace" }} onClick={() => handleLessonClick(lesson.id)}>
               <Lesson1Card title={lesson.title}   type={lesson.type} />
             </Link>
@@ -41,7 +41,7 @@ const handleLessonClick = (lessonId) => {
           Videos  
         </h1>
         {videoLessons.map((lesson, index) => (
-          <div key={index} className='col-6 col-md-3 col-lg-3   mb-4  px-5' >
+          <div key={index} className='col-6 col-md-3 col-lg-3   mb-4  px-1' >
         <Link to={`/group/${groupB.id}/lesson/${lesson.id}`} className='hov '  style={{ textDecoration: "none" , fontFamily:"monospace" }} onClick={() => handleLessonClick(lesson.id)}>
               <Lesson1Card title={lesson.title}   type={lesson.type} />
             </Link>
