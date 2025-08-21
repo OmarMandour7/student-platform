@@ -1,8 +1,10 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import backgroundImage from "../../images/Hero.webp";
-
+import heroSmall from "../../images/Hero-768.webp";
+import heroMedium from "../../images/Hero-1280.webp";
+import heroLarge from "../../images/Hero.webp";
 export default function Hero() {
+
   return (
     <section
       className="d-flex align-items-center justify-center mich position-relative"
@@ -10,7 +12,8 @@ export default function Hero() {
     >
       {/* صورة الخلفية */}
       <LazyLoadImage
-        src={backgroundImage}
+        src={heroLarge}
+        srcSet={`${heroSmall} 768w, ${heroMedium} 1280w, ${heroLarge} 1920w`}
         alt="Hero Background"
         effect="blur"
         width="1920"
