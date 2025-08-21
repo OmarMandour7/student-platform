@@ -1,4 +1,4 @@
-import backgroundImage from '../../images/Hero.jpg';
+import backgroundImage from '../../images/Hero.webp';
 
 export default function Hero() {
   const sectionStyle = {

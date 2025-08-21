@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.jpg'
+import logo from '../../images/logo.webp'
 export default function Navbar() {
   const [name, setName] = useState('');
   const [storedName, setStoredName] = useState('');
