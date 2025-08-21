@@ -109,7 +109,7 @@ const groupsData = [
         "activityLink": " ",
         "videos": [
           "https://www.youtube.com/embed/-Bl6UJmdql8?si=wpkzZUA-Ak2g1NwD",
-        "https://www.youtube.com/embed/-Bl6UJmdql8?si=xy8vpoC2WUQBzADR"
+        "https://www.youtube.com/embed/CttNCmty_w8?si=z-7JSM0LA7QA4UBc"
         ]
       }
     ]
@@ -224,7 +224,7 @@ const groupsData = [
         "activityLink": " ",
         "videos": [
           "https://www.youtube.com/embed/-Bl6UJmdql8?si=wpkzZUA-Ak2g1NwD",
-        "https://www.youtube.com/embed/-Bl6UJmdql8?si=xy8vpoC2WUQBzADR"
+        "https://www.youtube.com/embed/CttNCmty_w8?si=z-7JSM0LA7QA4UBc"
         ]
       }
     ]
