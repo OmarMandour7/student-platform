@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/logo.webp'
+import { FiLogOut } from "react-icons/fi";
+import { FiUser } from "react-icons/fi";
+
 export default function Navbar() {
   const [name, setName] = useState('');
   const [storedName, setStoredName] = useState('');
@@ -53,10 +56,10 @@ export default function Navbar() {
   <div className="d-flex flex-column flex-md-row align-items-center gap-2">
     {storedName ? (
       <div>
-        <span className="fw-bold fs-4 text-primary">{storedName}  <i className="fa-solid fa-right-from-bracket text-danger mx-5 "  style={{cursor:"pointer"}} onClick={handleLogout}></i> </span>
+        <span className="fw-bold fs-4 text-primary">{storedName}   <FiLogOut className='text-danger mx-3 fs-3' style={{cursor:"pointer"}} onClick={handleLogout}/> </span>
         {storedName.toLowerCase() === 'admin' && (
           <Link to="/admindashboard" className="ms-3">
-            <i className="fa-regular fa-user fs-5"></i>
+           <FiUser className='fs-2'/>
           </Link>
         )}
       </div>

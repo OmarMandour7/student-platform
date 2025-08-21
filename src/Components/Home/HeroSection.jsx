@@ -15,6 +15,7 @@ export default function Hero() {
         src={heroLarge}
         srcSet={`${heroSmall} 768w, ${heroMedium} 1280w, ${heroLarge} 1920w`}
         alt="Hero Background"
+        placeholderSrc={heroSmall}  
         effect="blur"
         width="1920"
         height="1080"
