@@ -1,11 +1,15 @@
 import React from 'react'
 import { FileText, Video } from 'lucide-react';
 
-const Lesson1Card = ({title, type}) => {
-  
+const Lesson1Card = ({title, type , id ,char}) => {
+
+    const isSeen = (id) => {
+      const watched = JSON.parse(localStorage.getItem(`watchedLessons${char}`)) || [];
+    return watched.includes(id);
+  };
   return (
 <div 
-  className="card d-flex flex-column align-items-center text-center mb-3 p-3 shadow-sm rounded" 
+  className={`card d-flex flex-column align-items-center text-center mx-2 my-3 p-3 ${  isSeen(id) ? "shadow-seen" : "shadow-notseen"}  rounded`} 
   style={{ width: 'auto', minWidth: '150px' }}
 >
   <div className="mb-2">

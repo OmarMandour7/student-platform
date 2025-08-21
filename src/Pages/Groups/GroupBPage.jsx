@@ -10,10 +10,10 @@ const videoLessons = groupB.lessons.filter(lesson => lesson.type === "video");
 const pdfLessons = groupB.lessons.filter(lesson => lesson.type === "pdf");
 
 const handleLessonClick = (lessonId) => {
-  const watched = JSON.parse(localStorage.getItem('watchedLessonsa')) || [];
+  const watched = JSON.parse(localStorage.getItem('watchedLessonsb')) || [];
   if (!watched.includes(lessonId) && localStorage.getItem("studentName")) {
     watched.push(lessonId);
-    localStorage.setItem('watchedLessonsa', JSON.stringify(watched));
+    localStorage.setItem('watchedLessonsb', JSON.stringify(watched));
   }
 };
   return (
@@ -29,9 +29,9 @@ const handleLessonClick = (lessonId) => {
           Document Lessons 
         </h1>
         {pdfLessons.map((lesson, index) => (
-          <div key={index} className='col-6 col-md-3 col-lg-3 col-lg-3   mb-4 px-1' >
+          <div key={index} className='col-6 col-md-4 col-lg-4    mb-4 px-1' >
         <Link to={`/group/${groupB.id}/lesson/${lesson.id}`} className='hov ' style={{ textDecoration: "none" , fontFamily:"monospace" }} onClick={() => handleLessonClick(lesson.id)}>
-              <Lesson1Card title={lesson.title}   type={lesson.type} />
+              <Lesson1Card title={lesson.title}   type={lesson.type} id={lesson.id} char={groupB.id.toLowerCase()} />
             </Link>
           </div>
         ))}
@@ -41,9 +41,9 @@ const handleLessonClick = (lessonId) => {
           Videos  
         </h1>
         {videoLessons.map((lesson, index) => (
-          <div key={index} className='col-6 col-md-3 col-lg-3   mb-4  px-1' >
+          <div key={index} className='col-6 col-md-4 col-lg-3   mb-4  px-1' >
         <Link to={`/group/${groupB.id}/lesson/${lesson.id}`} className='hov '  style={{ textDecoration: "none" , fontFamily:"monospace" }} onClick={() => handleLessonClick(lesson.id)}>
-              <Lesson1Card title={lesson.title}   type={lesson.type} />
+              <Lesson1Card title={lesson.title}   type={lesson.type} id={lesson.id} char={groupB.id.toLowerCase()} />
             </Link>
           </div>
         ))}

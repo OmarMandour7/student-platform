@@ -234,21 +234,149 @@ const groupsData = [
     "name": "Group C",
     "color": "green",
     "lessons": [
-      {
+       {
         "id": "1",
-        "title": "Lesson ",
+        "title": "Lesson 1",
+        "type": "pdf",
+        "pdfId": "1W3gUxXkDvJOW7xdka1ezxR7rRKxM4IU7"
+      }
+      ,
+       {
+        "id": "2",
+        "title": "Lesson 2",
+        "type": "pdf",
+        "pdfId": "1Iz5tPf5m_RGKCDlP6P9jnwlCXdJ5-cmb"
+      }
+      ,
+       {
+        "id": "3",
+        "title": "Lesson 3",
+        "type": "pdf",
+        "pdfId": "1ac_2wZabEdXxz6ytzLzFrU3DRurJxNlE"
+      }
+      ,
+       {
+        "id": "4",
+        "title": "Lesson 4",
+        "type": "pdf",
+        "pdfId": "13wmxUACvfsJLbentwVIBDXmCLCYZDzCu"
+      },
+      {
+        "id": "5",
+        "title": "Lesson 5",
+        "type": "pdf",
+        "pdfId": "1sa5-YxAaDoTFrr0PzVLYJrkjlE6WiC9S"
+      }
+      ,
+      {
+        "id": "6",
+        "title": "Lesson 6",
+        "type": "pdf",
+        "pdfId": "1Om6FwmaA_IRNhxfhc3LO6iiXWlmsYVPa"
+      },
+      {
+        "id": "7",
+        "title": "Intro ",
         "type": "video",
-        "activityLink": "https://classroom.google.com/c/1234567890/a/1111111111",
+        "activityLink": "https://create.kahoot.it/details/320ca8c5-f2f2-407d-92c9-1dc7a4cf9f20",
         "videos": [
-          "https://www.youtube.com/embed/lG3CG4Bs7sY",
-          "https://www.youtube.com/embed/lG3CG4Bs7sY"
+          "https://www.youtube.com/embed/FJIMA0ZqBVk?si=jCbsDCSEsAaZvI2G",
         ]
       },
       {
-        "id": "2",
-        "title": "Lesson ",
-        "type": "pdf",
-        "pdfId": "1PhtvjnTod54avTokQl-ybxUuOqDgqPbB"
+        "id": "8",
+        "title": "Lesson 1 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/v_EKo14_Iq4?si=GS5GdeMOHpmk5C-v",
+        "https://www.youtube.com/embed/LQS-_hyUpnk?si=ffXSdMedhvRclb-H"
+        ]
+      }, {
+        "id": "9",
+        "title": "Lesson 2 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/yN2rdsqIeWU?si=CVmQHoZNcq8VcTBg",
+        "https://www.youtube.com/embed/C-rb9z9dq-A?si=n3IMOtTCGVJShuU9"
+        ]
+      },
+       {
+        "id": "10",
+        "title": "Lesson 3 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/4cvId7w8AxM?si=gyoF1xRb_3-25lrI",
+        "https://www.youtube.com/embed/r5JoflURDQE?si=WvScMQAzsg-gptY3"
+        ]
+      },
+       {
+        "id": "11",
+        "title": "Lesson 4 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/jtYm88uzG8Q?si=W1U-BvOmXFFiymJb",
+        "https://www.youtube.com/embed/uWSo20nKKdk?si=xm5DuBUt8rRkEPCz"
+        ]
+      },
+       {
+        "id": "12",
+        "title": "Lesson 5 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/WWoMYQ_yOH4?si=oyXoeG6uus7K29Nn",
+        "https://www.youtube.com/embed/NE5eq693lOA?si=PlUkNWSVllfwzZfO"
+        ]
+      },
+       {
+        "id": "13",
+        "title": "Lesson 6 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/9QADsPpcfVY?si=q5Q4zPXO34ryLVKx",
+        "https://www.youtube.com/embed/ZLGvjsJdqS8?si=MaGoEN3cQVTRPkY8",
+        ]
+      }, {
+        "id": "14",
+        "title": "Lesson 7 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/-A7RB0f29LQ?si=AsuLIVKY0ZWsCobb",
+        "https://www.youtube.com/embed/jVZUdpbJRHQ?si=QqOi18RrZvvK7hR_"
+        ]
+      }, {
+        "id": "15",
+        "title": "Lesson 8 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/6Xd9IDfBYm4?si=fM589cSHAc8K-5fA",
+        "https://www.youtube.com/embed/p8acOn_FUS8?si=vVk3lAcDe8TdSdcy"
+        ]
+      }, {
+        "id": "16",
+        "title": "Lesson 9 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/ZOwRP1gViPU?si=1_I18Y3pwivBGTlG",
+        "https://www.youtube.com/embed/WKiJOuA3wE0?si=8O9fJTHCSrnqV-tf"
+        ]
+      }, {
+        "id": "17",
+        "title": "Lesson 10 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/m3U5Q9SvvmI?si=0coC4TjACkSiVwys",
+        "https://www.youtube.com/embed/EfHJCtFo1fs?si=GmJEH76w9u7rYKFO"
+        ]
       }
     ]
   },
@@ -257,21 +385,149 @@ const groupsData = [
     "name": "Group D",
     "color": "#6C757D",
     "lessons": [
-      {
+       {
         "id": "1",
-        "title": "Lesson ",
+        "title": "Lesson 1",
+        "type": "pdf",
+        "pdfId": "1W3gUxXkDvJOW7xdka1ezxR7rRKxM4IU7"
+      }
+      ,
+       {
+        "id": "2",
+        "title": "Lesson 2",
+        "type": "pdf",
+        "pdfId": "1Iz5tPf5m_RGKCDlP6P9jnwlCXdJ5-cmb"
+      }
+      ,
+       {
+        "id": "3",
+        "title": "Lesson 3",
+        "type": "pdf",
+        "pdfId": "1ac_2wZabEdXxz6ytzLzFrU3DRurJxNlE"
+      }
+      ,
+       {
+        "id": "4",
+        "title": "Lesson 4",
+        "type": "pdf",
+        "pdfId": "13wmxUACvfsJLbentwVIBDXmCLCYZDzCu"
+      },
+      {
+        "id": "5",
+        "title": "Lesson 5",
+        "type": "pdf",
+        "pdfId": "1sa5-YxAaDoTFrr0PzVLYJrkjlE6WiC9S"
+      }
+      ,
+      {
+        "id": "6",
+        "title": "Lesson 6",
+        "type": "pdf",
+        "pdfId": "1Om6FwmaA_IRNhxfhc3LO6iiXWlmsYVPa"
+      },
+      {
+        "id": "7",
+        "title": "Intro ",
         "type": "video",
-        "activityLink": "https://classroom.google.com/c/1234567890/a/1111111111",
+        "activityLink": "https://create.kahoot.it/details/320ca8c5-f2f2-407d-92c9-1dc7a4cf9f20",
         "videos": [
-          "https://www.youtube.com/embed/lG3CG4Bs7sY",
-          "https://www.youtube.com/embed/lG3CG4Bs7sY"
+          "https://www.youtube.com/embed/FJIMA0ZqBVk?si=jCbsDCSEsAaZvI2G",
         ]
       },
       {
-        "id": "2",
-        "title": "Lesson ",
-        "type": "pdf",
-        "pdfId": "1PhtvjnTod54avTokQl-ybxUuOqDgqPbB"
+        "id": "8",
+        "title": "Lesson 1 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/v_EKo14_Iq4?si=GS5GdeMOHpmk5C-v",
+        "https://www.youtube.com/embed/LQS-_hyUpnk?si=ffXSdMedhvRclb-H"
+        ]
+      }, {
+        "id": "9",
+        "title": "Lesson 2 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/yN2rdsqIeWU?si=CVmQHoZNcq8VcTBg",
+        "https://www.youtube.com/embed/C-rb9z9dq-A?si=n3IMOtTCGVJShuU9"
+        ]
+      },
+       {
+        "id": "10",
+        "title": "Lesson 3 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/4cvId7w8AxM?si=gyoF1xRb_3-25lrI",
+        "https://www.youtube.com/embed/r5JoflURDQE?si=WvScMQAzsg-gptY3"
+        ]
+      },
+       {
+        "id": "11",
+        "title": "Lesson 4 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/jtYm88uzG8Q?si=W1U-BvOmXFFiymJb",
+        "https://www.youtube.com/embed/uWSo20nKKdk?si=xm5DuBUt8rRkEPCz"
+        ]
+      },
+       {
+        "id": "12",
+        "title": "Lesson 5 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/WWoMYQ_yOH4?si=oyXoeG6uus7K29Nn",
+        "https://www.youtube.com/embed/NE5eq693lOA?si=PlUkNWSVllfwzZfO"
+        ]
+      },
+       {
+        "id": "13",
+        "title": "Lesson 6 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/9QADsPpcfVY?si=q5Q4zPXO34ryLVKx",
+        "https://www.youtube.com/embed/ZLGvjsJdqS8?si=MaGoEN3cQVTRPkY8",
+        ]
+      }, {
+        "id": "14",
+        "title": "Lesson 7 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/-A7RB0f29LQ?si=AsuLIVKY0ZWsCobb",
+        "https://www.youtube.com/embed/jVZUdpbJRHQ?si=QqOi18RrZvvK7hR_"
+        ]
+      }, {
+        "id": "15",
+        "title": "Lesson 8 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/6Xd9IDfBYm4?si=fM589cSHAc8K-5fA",
+        "https://www.youtube.com/embed/p8acOn_FUS8?si=vVk3lAcDe8TdSdcy"
+        ]
+      }, {
+        "id": "16",
+        "title": "Lesson 9 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/ZOwRP1gViPU?si=1_I18Y3pwivBGTlG",
+        "https://www.youtube.com/embed/WKiJOuA3wE0?si=8O9fJTHCSrnqV-tf"
+        ]
+      }, {
+        "id": "17",
+        "title": "Lesson 10 ",
+        "type": "video",
+        "activityLink": " ",
+        "videos": [
+          "https://www.youtube.com/embed/m3U5Q9SvvmI?si=0coC4TjACkSiVwys",
+        "https://www.youtube.com/embed/EfHJCtFo1fs?si=GmJEH76w9u7rYKFO"
+        ]
       }
     ]
   }

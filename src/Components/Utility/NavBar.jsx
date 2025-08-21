@@ -53,7 +53,7 @@ export default function Navbar() {
   <div className="d-flex flex-column flex-md-row align-items-center gap-2">
     {storedName ? (
       <div>
-        <span className="fw-bold fs-4 text-primary">{storedName}  <i class="fa-solid fa-right-from-bracket text-danger mx-5 "  style={{cursor:"pointer"}} onClick={handleLogout}></i> </span>
+        <span className="fw-bold fs-4 text-primary">{storedName}  <i className="fa-solid fa-right-from-bracket text-danger mx-5 "  style={{cursor:"pointer"}} onClick={handleLogout}></i> </span>
         {storedName.toLowerCase() === 'admin' && (
           <Link to="/admindashboard" className="ms-3">
             <i className="fa-regular fa-user fs-5"></i>

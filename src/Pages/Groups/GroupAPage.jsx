@@ -32,7 +32,7 @@ const handleLessonClick = (lessonId) => {
         {pdfLessons.map((lesson, index) => (
           <div key={index} className='col-6 col-md-3 col-lg-3 col-lg-3    px-1' >
         <Link to={`/group/${groupA.id}/lesson/${lesson.id}`} className='hov ' style={{ textDecoration: "none" , fontFamily:"monospace" }} onClick={() => handleLessonClick(lesson.id)}>
-              <Lesson1Card title={lesson.title}   type={lesson.type} />
+              <Lesson1Card title={lesson.title}   type={lesson.type} id={lesson.id} char={groupA.id.toLowerCase()} />
             </Link>
           </div>
         ))}
@@ -44,7 +44,7 @@ const handleLessonClick = (lessonId) => {
         {videoLessons.map((lesson, index) => (
           <div key={index} className='col-6 col-md-3 col-lg-3   mb-4  px-1' >
         <Link to={`/group/${groupA.id}/lesson/${lesson.id}`} className='hov '  style={{ textDecoration: "none" , fontFamily:"monospace" }} onClick={() => handleLessonClick(lesson.id)}>
-              <Lesson1Card title={lesson.title}   type={lesson.type} />
+              <Lesson1Card title={lesson.title}   type={lesson.type} id={lesson.id} char={groupA.id.toLowerCase()} />
             </Link>
           </div>
         ))}
