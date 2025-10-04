@@ -11,6 +11,7 @@ const override  = {
   margin: "0",
   borderColor: "blue",
 };
+const [ActOpen, setActOpen] = useState(false)
   const { groupId, lessonId } = useParams();
   const [comment, setComment] = useState('');
   const [comments, setComments] = useState([]);
@@ -106,11 +107,20 @@ useEffect(() => {
             ></iframe>
           </div>
         ))}
-        {lesson.activityLink === " " ? (<div></div>) :  <div className="my-5">
-        <h4>Activity</h4>
+        {lesson.activityLink === " " ? (<div></div>) :  <div className="my-5 d-flex justify-content-between">
+          <div><h4 className='mb-5'>Activity</h4>
         <a href={lesson.activityLink} target="_blank" rel="noopener noreferrer">
-          <button className="btn btn-primary">Visit Activity</button>
-        </a>
+          <button className="btn btn-primary fs-4" onClick={()=>setActOpen(!ActOpen)}>Visit Activity</button>
+        </a></div>
+
+        {
+            ActOpen ? <div></div> : <div>
+          <h5 className='text-danger'>
+            Don't Forget Activity *
+          </h5>
+        </div>
+        }
+        
       </div>
       }
       </div> :<div></div>

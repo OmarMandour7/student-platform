@@ -49,7 +49,7 @@ const groupsData = [
         "id": "7",
         "title": "Intro ",
         "type": "video",
-        "activityLink": "https://create.kahoot.it/details/320ca8c5-f2f2-407d-92c9-1dc7a4cf9f20",
+        "activityLink": "",
         "videos": [
           "https://www.youtube.com/embed/FJIMA0ZqBVk?si=jCbsDCSEsAaZvI2G",
         ]
@@ -58,7 +58,7 @@ const groupsData = [
         "id": "8",
         "title": "Lesson 1",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=36032834",
         "videos": [
           "https://www.youtube.com/embed/b4agem_yCaY?si=B56uij8xC1aQzBg-",
         "https://www.youtube.com/embed/UiM14tlRIhI?si=W9FOtKmdRjLTaQcP"
@@ -67,7 +67,7 @@ const groupsData = [
         "id": "9",
         "title": "Lesson 2 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=22925634",
         "videos": [
           "https://www.youtube.com/embed/pCpnatILtFs?si=gt6Ri_KU-VXNBlTw",
         "https://www.youtube.com/embed/XKxj1-mkGdI?si=XLk3L4nVEGY3nUzP"
@@ -76,7 +76,7 @@ const groupsData = [
         "id": "10",
         "title": "Lesson 3 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=50581826",
         "videos": [
           "https://www.youtube.com/embed/A1P1HRfwoEI?si=LXVDRCNvfyJ0aOWr",
         "https://www.youtube.com/embed/ej2Lrqd6Yfo?si=KN7KWInItQyboN_-"
@@ -86,7 +86,7 @@ const groupsData = [
         "id": "11",
         "title": "Lesson 4 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=31969602",
         "videos": [
           "https://www.youtube.com/embed/Do8C8QDL0Wo?si=NAgIse-BwCyud8mT",
         "https://www.youtube.com/embed/b2_r9_3J0Uo?si=poR1t1L_mBNAWysf"
@@ -96,7 +96,7 @@ const groupsData = [
         "id": "12",
         "title": "Lesson 5 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=65253698",
         "videos": [
           "https://www.youtube.com/embed/-YscTfcjQpc?si=0p2bIH5EvFf3E-ae",
         "https://www.youtube.com/embed/6fwd-8tWJF4?si=Is3XHugCbIbsnAKL"
@@ -106,7 +106,7 @@ const groupsData = [
         "id": "13",
         "title": "Lesson 6 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=62894402",
         "videos": [
           "https://www.youtube.com/embed/-Bl6UJmdql8?si=wpkzZUA-Ak2g1NwD",
         "https://www.youtube.com/embed/CttNCmty_w8?si=z-7JSM0LA7QA4UBc"
@@ -173,7 +173,7 @@ const groupsData = [
         "id": "8",
         "title": "Lesson 1",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=36032834",
         "videos": [
           "https://www.youtube.com/embed/b4agem_yCaY?si=B56uij8xC1aQzBg-",
         "https://www.youtube.com/embed/UiM14tlRIhI?si=W9FOtKmdRjLTaQcP"
@@ -182,7 +182,7 @@ const groupsData = [
         "id": "9",
         "title": "Lesson 2 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=22925634",
         "videos": [
           "https://www.youtube.com/embed/pCpnatILtFs?si=gt6Ri_KU-VXNBlTw",
         "https://www.youtube.com/embed/XKxj1-mkGdI?si=XLk3L4nVEGY3nUzP"
@@ -191,7 +191,7 @@ const groupsData = [
         "id": "10",
         "title": "Lesson 3 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=50581826",
         "videos": [
           "https://www.youtube.com/embed/A1P1HRfwoEI?si=LXVDRCNvfyJ0aOWr",
         "https://www.youtube.com/embed/ej2Lrqd6Yfo?si=KN7KWInItQyboN_-"
@@ -201,7 +201,7 @@ const groupsData = [
         "id": "11",
         "title": "Lesson 4 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=31969602",
         "videos": [
           "https://www.youtube.com/embed/Do8C8QDL0Wo?si=NAgIse-BwCyud8mT",
         "https://www.youtube.com/embed/b2_r9_3J0Uo?si=poR1t1L_mBNAWysf"
@@ -211,7 +211,7 @@ const groupsData = [
         "id": "12",
         "title": "Lesson 5 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=65253698",
         "videos": [
           "https://www.youtube.com/embed/-YscTfcjQpc?si=0p2bIH5EvFf3E-ae",
         "https://www.youtube.com/embed/6fwd-8tWJF4?si=Is3XHugCbIbsnAKL"
@@ -221,7 +221,7 @@ const groupsData = [
         "id": "13",
         "title": "Lesson 6 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "https://wayground.com/join?gc=62894402",
         "videos": [
           "https://www.youtube.com/embed/-Bl6UJmdql8?si=wpkzZUA-Ak2g1NwD",
         "https://www.youtube.com/embed/CttNCmty_w8?si=z-7JSM0LA7QA4UBc"
@@ -278,7 +278,7 @@ const groupsData = [
         "id": "7",
         "title": "Intro ",
         "type": "video",
-        "activityLink": "https://create.kahoot.it/details/320ca8c5-f2f2-407d-92c9-1dc7a4cf9f20",
+        "activityLink": "",
         "videos": [
           "https://www.youtube.com/embed/FJIMA0ZqBVk?si=jCbsDCSEsAaZvI2G",
         ]
@@ -287,7 +287,7 @@ const groupsData = [
         "id": "8",
         "title": "Lesson 1 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "",
         "videos": [
           "https://www.youtube.com/embed/v_EKo14_Iq4?si=GS5GdeMOHpmk5C-v",
         "https://www.youtube.com/embed/LQS-_hyUpnk?si=ffXSdMedhvRclb-H"
@@ -354,7 +354,7 @@ const groupsData = [
         "id": "15",
         "title": "Lesson 8 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "",
         "videos": [
           "https://www.youtube.com/embed/6Xd9IDfBYm4?si=fM589cSHAc8K-5fA",
         "https://www.youtube.com/embed/p8acOn_FUS8?si=vVk3lAcDe8TdSdcy"
@@ -363,7 +363,7 @@ const groupsData = [
         "id": "16",
         "title": "Lesson 9 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "",
         "videos": [
           "https://www.youtube.com/embed/ZOwRP1gViPU?si=1_I18Y3pwivBGTlG",
         "https://www.youtube.com/embed/WKiJOuA3wE0?si=8O9fJTHCSrnqV-tf"
@@ -372,7 +372,7 @@ const groupsData = [
         "id": "17",
         "title": "Lesson 10 ",
         "type": "video",
-        "activityLink": " ",
+        "activityLink": "",
         "videos": [
           "https://www.youtube.com/embed/m3U5Q9SvvmI?si=0coC4TjACkSiVwys",
         "https://www.youtube.com/embed/EfHJCtFo1fs?si=GmJEH76w9u7rYKFO"
